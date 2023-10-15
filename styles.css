@@ -1,29 +1,53 @@
-body{
+:root {
+    --color-first: #f3ef0d;
+}
+
+body {
     overflow-x: hidden;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-table{
+table {
     margin-bottom: 3rem;
 }
 
-.child-elements td{
-    height:50px;
-    width:50px;
+.child-elements td {
+    height: 50px;
+    width: 50px;
     text-align: center;
     border: 2px solid #000;
 }
 
-.even td:nth-child(even){
-    background-color: #f3ef0d;
+.even td:nth-child(even) {
+    background-color: var(--color-first);
 }
 
-.odd td:nth-child(odd){
-    background-color: #f3ef0d;
+.odd td:nth-child(odd) {
+    background-color: var(--color-first);
+}
+
+.num-element td:nth-child(7) {
+    background-color: var(--color-first);
+}
+
+.An td:nth-child(3n) {
+    background-color: var(--color-first);
+}
+
+.AnplusB td:nth-child(3n+2) {
+    background-color: var(--color-first);
+}
+
+.minusnplusB td:nth-child(-n+4) {
+    background-color: var(--color-first);
+}
+
+.nplusB td:nth-child(n+7) {
+    background-color: var(--color-first);
 }

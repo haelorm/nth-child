@@ -1,5 +1,5 @@
 # CSS nth-child
 
-## Pseudo-clase
+## Pseudo-clase nth-child
 
-[]
+[Ver aquí](https://haelorm.github.io/nth-child  )

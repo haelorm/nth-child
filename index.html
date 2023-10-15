@@ -19,7 +19,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td colspan="10">Todos los elementos hijos pares</td>
+                    <td colspan="10">Todos los elementos pares</td>
                 </tr>
                 <tr class="child-elements even">
                     <td>1</td>
@@ -44,7 +44,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td colspan="10">Todos los elementos hijos impares</td>
+                    <td colspan="10">Todos los elementos impares</td>
                 </tr>
                 <tr class="child-elements odd">
                     <td>1</td>
@@ -60,6 +60,132 @@
                 </tr>
             </tbody>
         </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="10">:nth-child(n) => :nth-child(7)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="10">Un elemento específico</td>
+                </tr>
+                <tr class="child-elements num-element">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="10">:nth-child(An) => :nth-child(3n) </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="10">Desde el elemento A cada A elementos</td>
+                </tr>
+                <tr class="child-elements An">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="10">:nth-child(An+B) => :nth-child(3n+2)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="10">Desde el elemento B y cada A elementos</td>
+                </tr>
+                <tr class="child-elements AnplusB">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="10">:nth-child(-n+B) => :nth-child(-n+4)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="10">Desde el primer elemento hasta el elemento B</td>
+                </tr>
+                <tr class="child-elements minusnplusB">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="10">:nth-child(n+B) => :nth-child(n+7)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="10">Desde el último elemento hasta el elemento B</td>
+                </tr>
+                <tr class="child-elements nplusB">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+
     </section>
 </body>
 
